@@ -1,0 +1,21 @@
+experiment,query,precision@1,precision@3,precision@5,recall@5,mrr,hit_rate@5,ndcg@5
+baseline,How many evaluation metrics does the proposed framework implement?,0.0,0.0,0.0,0.0,0.0,0,0.0
+baseline,What application domain was used to evaluate the RAG framework?,1.0,0.6666666666666666,0.4,0.5,1.0,1,0.6366824387328317
+baseline,What database technology was used for similarity search?,1.0,0.6666666666666666,0.6,1.0,1.0,1,0.9469024295259745
+baseline,What are the three major categories of evaluation metrics?,1.0,0.6666666666666666,0.4,0.6666666666666666,1.0,1,0.7039180890341347
+baseline,How many test cases were used in the evaluation suite?,1.0,0.6666666666666666,0.6,0.75,1.0,1,0.7365896932159578
+baseline,How many LLM variants were evaluated in the experiments?,1.0,0.6666666666666666,0.6,0.75,1.0,1,0.8048099750039491
+baseline,Which OpenAI models were evaluated?,1.0,0.6666666666666666,0.6,0.75,1.0,1,0.787702056960637
+baseline,How many distinct test configurations were evaluated?,1.0,0.6666666666666666,0.4,1.0,1.0,1,0.9197207891481876
+baseline,What happens when temperature and top-p reach extreme values?,1.0,0.3333333333333333,0.6,0.75,1.0,1,0.7095272044910244
+baseline,Why is RAG valuable in tourism recommendation systems?,0.0,0.3333333333333333,0.6,0.75,0.5,1,0.5654495432396527
+reranker,How many evaluation metrics does the proposed framework implement?,0.0,0.6666666666666666,0.6,1.0,0.5,1,0.7328286204777911
+reranker,What application domain was used to evaluate the RAG framework?,1.0,1.0,0.8,1.0,1.0,1,1.0
+reranker,What database technology was used for similarity search?,1.0,1.0,0.6,1.0,1.0,1,1.0
+reranker,What are the three major categories of evaluation metrics?,1.0,0.6666666666666666,0.6,1.0,1.0,1,0.9060254355346823
+reranker,How many test cases were used in the evaluation suite?,1.0,1.0,0.8,1.0,1.0,1,1.0
+reranker,How many LLM variants were evaluated in the experiments?,1.0,1.0,0.6,0.75,1.0,1,0.8318724637288826
+reranker,Which OpenAI models were evaluated?,1.0,1.0,0.6,0.75,1.0,1,0.8318724637288826
+reranker,How many distinct test configurations were evaluated?,1.0,0.6666666666666666,0.4,1.0,1.0,1,1.0
+reranker,What happens when temperature and top-p reach extreme values?,1.0,1.0,0.6,0.75,1.0,1,0.8318724637288826
+reranker,Why is RAG valuable in tourism recommendation systems?,0.0,0.6666666666666666,0.6,0.75,0.5,1,0.6096199500078984

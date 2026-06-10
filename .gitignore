@@ -1,0 +1,14 @@
+.env
+venv/
+db/
+db_new/
+db_gemini_test/
+__pycache__/
+*.pyc
+/evaluation/__pycache__/
+direct_search.py
+rebuild_db.py
+temp.py
+test_embeddings.py
+test_gemini_integration.py
+test_queries.py

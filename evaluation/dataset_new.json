@@ -1,0 +1,393 @@
+[
+  {
+    "query": "What  mechanism replaces recurrence in the Transformer architecture?",
+    "answer": "An attention mechanism (specifically self-attention / multi-head self-attention) replaces recurrence.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_4_child_1",
+      "attention-all-you-need_parent_29_child_3",
+      "attention-all-you-need_parent_0_child_4",
+      "attention-all-you-need_parent_3_child_6",
+      "attention-all-you-need_parent_6_child_4"
+    ]
+  },
+  {
+    "query": "What is the name of the architecture proposed in the paper?",
+    "answer": "The Transformer.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_0_child_3",
+      "attention-all-you-need_parent_6_child_5",
+      "attention-all-you-need_parent_8_child_0"
+    ]
+  },
+  {
+    "query": "How many encoder layers are used in the base Transformer model?",
+    "answer": "6 encoder layers (N = 6).",
+    "source_document": "attention-all-you-need.pdf",
+     "relevant_ids": [
+      "attention-all-you-need_parent_6_child_6",
+      "attention-all-you-need_parent_8_child_2"
+    ]
+  },
+  {
+    "query": "How many decoder layers are used in the base Transformer model?",
+    "answer": "6 decoder layers (N = 6).",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_8_child_2"
+    ]
+  },
+  {
+    "query": "What dimensionality is used for d_model in the base Transformer?",
+    "answer": "d_model = 512",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_15_child_1",
+      "attention-all-you-need_parent_8_child_2"
+    ]
+  },
+  {
+    "query": "What is Scaled Dot Product Attention?",
+    "answer": "An attention mechanism that computes attention weights using the dot products of queries and keys, scales them by 1/sqrt(dk), applies a softmax, and uses the resulting weights to combine the values.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_10_child_0",
+      "attention-all-you-need_parent_9_child_3",
+      "attention-all-you-need_parent_11_child_1"
+    ]
+  },
+  {
+    "query": "How many attention heads are used in the Transformer base model?",
+    "answer": "8 attention heads (h = 8).",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_13_child_3"
+    ]
+  },
+  {
+    "query": "What value is used for dk in each attention head?",
+    "answer": "dk = 64",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_13_child_3"
+    ]
+  },
+  {
+    "query": "Why are positional encodings required in the Transformer?",
+    "answer": "Because the Transformer contains no recurrence and no convolution, it has no built-in notion of token order. Positional encodings inject information about the relative or absolute positions of tokens so the model can use sequence order.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_15_child_6",
+      "attention-all-you-need_parent_16_child_3"
+    ]
+  },
+  {
+    "query": "Which functions are used in sinusoidal positional encoding?",
+    "answer": "Sine and cosine functions of different frequencies.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_16_child_4",
+      "attention-all-you-need_parent_17_child_1"
+    ]
+  },
+  {
+    "query": "Which optimizer is used to train the Transformer?",
+    "answer": "Adam optimizer with:\nβ₁ = 0.9\nβ₂ = 0.98\nε = 10⁻⁹",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_22_child_2"
+    ]
+  },
+  {
+    "query": "How many warmup steps are used during Transformer training?",
+    "answer": "4000 warmup steps.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_22_child_3"
+    ]
+  },
+  {
+    "query": "What BLEU score did Transformer Big achieve on WMT 2014 English to German?",
+    "answer": "28.4 BLEU.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_24_child_5",
+      "attention-all-you-need_parent_1_child_0",
+      "attention-all-you-need_parent_0_child_6",
+      "attention-all-you-need_parent_25_child_2"
+    ]
+  },
+  {
+    "query": "What BLEU score did Transformer Big achieve on WMT 2014 English to French?",
+    "answer": "41.0 BLEU.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_25_child_2",
+      "attention-all-you-need_parent_24_child_5",
+      "attention-all-you-need_parent_1_child_0",
+      "attention-all-you-need_parent_0_child_6"
+    ]
+  },
+  {
+    "query": "Why is self attention computationally efficient compared to recurrent networks?",
+    "answer": "Because self-attention requires only O(1) sequential operations and can be highly parallelized, whereas recurrent networks require O(n) sequential operations. Additionally, self-attention is computationally faster when the sequence length n is smaller than the representation dimension d, which is common in machine translation.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_19_child_0",
+      "attention-all-you-need_parent_18_child_5",
+      "attention-all-you-need_parent_16_child_2",
+      "attention-all-you-need_parent_17_child_3"
+    ]
+  },
+  {
+    "query": "What mechanism allows the Transformer to model relationships between tokens?",
+    "answer": "Self-attention (specifically multi-head self-attention), which allows the model to relate different positions/tokens in a sequence and capture dependencies between them.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_5_child_5",
+      "attention-all-you-need_parent_6_child_0",
+      "attention-all-you-need_parent_7_child_1",
+      "attention-all-you-need_parent_4_child_1"
+    ]
+  },
+  {
+    "query": "What is the feed-forward network dimension used in the base Transformer?",
+    "answer": "dff = 2048",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_28_child_0",
+      "attention-all-you-need_parent_14_child_4"
+    ]
+  },
+  {
+    "query": "What dropout rate is used in the base Transformer model?",
+    "answer": "Pdrop = 0.1",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_23_child_0",
+      "attention-all-you-need_parent_22_child_6",
+      "attention-all-you-need_parent_28_child_0"
+    ]
+  },
+  {
+    "query": "What is the purpose of Multi-Head Attention?",
+    "answer": "To allow the model to jointly attend to information from different representation subspaces at different positions. Multiple attention heads enable the model to capture different types of relationships simultaneously, which a single attention head cannot do as effectively.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_11_child_6",
+      "attention-all-you-need_parent_12_child_0",
+      "attention-all-you-need_parent_13_child_2"
+    ]
+  },
+  {
+    "query": "What dataset was used for English-German translation experiments?",
+    "answer": "The standard WMT 2014 English-German dataset, consisting of about 4.5 million sentence pairs.",
+    "source_document": "attention-all-you-need.pdf",
+    "relevant_ids": [
+      "attention-all-you-need_parent_21_child_3"
+    ]
+  },
+  {
+    "query": "How many evaluation metrics does the proposed framework implement?",
+    "answer": "17 distinct evaluation metrics",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_1_child_0",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_0_child_6",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_20_child_4"
+    ]
+  },
+  {
+    "query": "What application domain was used to evaluate the RAG framework?",
+    "answer": "Tourism / travel recommendation systems (specifically a tourism application for travel planning and location-based recommendations).",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_11_child_3",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_36_child_0",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_37_child_5",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_9_child_0"
+    ]
+  },
+  {
+    "query": "What database technology was used for similarity search?",
+    "answer": "FAISS (Facebook AI Similarity Search)",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_14_child_2",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_15_child_0",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_13_child_6"
+    ]
+  },
+  {
+    "query": "What are the three major categories of evaluation metrics?",
+    "answer": "Text metrics, semantic similarity assessments, and LLM-based evaluations.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_17_child_3",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_36_child_4",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_19_child_5"
+    ]
+  },
+  {
+    "query": "How many test cases were used in the evaluation suite?",
+    "answer": "10 test cases.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_21_child_2",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_23_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_35_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_34_child_6"
+    ]
+  },
+  {
+    "query": "How many LLM variants were evaluated in the experiments?",
+    "answer": "3 LLM variants.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_24_child_3",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_0_child_5",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_34_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_26_child_1"
+    ]
+  },
+  {
+    "query": "Which OpenAI models were evaluated?",
+    "answer": "GPT 3.5 Turbo, GPT 4o, and GPT 4o Mini.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_24_child_3",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_27_child_5",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_34_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_25_child_5"
+    ]
+  },
+  {
+    "query": "How many distinct test configurations were evaluated?",
+    "answer": "24 distinct test configurations",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_25_child_4",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_24_child_3"
+    ]
+  },
+  {
+    "query": "What happens when temperature and top-p reach extreme values?",
+    "answer": "Response quality degrades significantly. The models produce less reliable, less coherent, and sometimes incoherent or contextually inappropriate responses. In the experiments, performance dropped by up to 64% when temperature and top-p were set to their maximum values.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_26_child_3",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_32_child_2",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_37_child_2",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_28_child_2"
+    ]
+  },
+  {
+    "query": "Why is RAG valuable in tourism recommendation systems?",
+    "answer": "RAG is valuable because it improves factual accuracy, regional specificity, precision, and relevance in travel recommendations by retrieving domain-specific tourism information and incorporating it into generated responses.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_31_child_4",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_33_child_4",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_37_child_0",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_11_child_3"
+    ]
+  },
+  {
+    "query": "Which framework was used to implement the testing methodology?",
+    "answer": "Evidently (an open-source machine learning evaluation framework).",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_11_child_1"
+    ]
+  },
+  {
+    "query": "What are the two major components of a RAG system?",
+    "answer": "The retrieval component and the generation component.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_4_child_2",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_3_child_3"
+    ]
+  },
+  {
+    "query": "What similarity search engine was used in the tourism recommendation architecture?",
+    "answer": "FAISS (Facebook AI Similarity Search)",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_14_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_15_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_13_child_6"
+    ]
+  },
+  {
+    "query": "What data source was used for tourism information?",
+    "answer": "The Varmland Tourism API, with the Turid website serving as the primary data source for tourism information.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_12_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_13_child_3"
+    ]
+  },
+  {
+    "query": "What is the purpose of embedding generation in the RAG architecture?",
+    "answer": "To transform tourism data and user queries into high-dimensional vector representations (embeddings) that enable semantic similarity search and retrieval of relevant information from the FAISS index.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_13_child_6",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_14_child_0",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_15_child_0"
+    ]
+  },
+  {
+    "query": "What is one major challenge in testing LLM systems?",
+    "answer": "LLMs produce non-deterministic outputs and can exhibit context-dependent behavior and hallucinations, making traditional testing approaches insufficient.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_3_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_2_child_6",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_4_child_3",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_5_child_5"
+    ]
+  },
+  {
+    "query": "Which evaluation framework is specifically mentioned for RAG evaluation?",
+    "answer": "RAGAS (Retrieval-Augmented Generation Assessment)",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_8_child_4",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_9_child_0",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_11_child_0"
+    ]
+  },
+  {
+    "query": "What issue does chain-of-verification help address?",
+    "answer": "Hallucinations in LLM outputs (helping detect and reduce factually incorrect or fabricated information).",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_10_child_2",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_41_child_1",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_5_child_4"
+    ]
+  },
+  {
+    "query": "What are examples of text metrics used in the evaluation framework?",
+    "answer": "Character count, word count, sentence count, proportion of non-letter characters, and proportion of out-of-vocabulary terms.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_17_child_4",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_18_child_5"
+    ]
+  },
+  {
+    "query": "What was one key finding regarding GPT-4o and GPT-4o Mini?",
+    "answer": "GPT-4o and GPT-4o Mini showed modest/incremental improvements over GPT-3.5 Turbo, primarily in response length, complexity, and structure rather than in fundamental quality metrics.",
+    "source_document": "LLM RAG SYSTEMS RESEARCH PAPER.pdf",
+    "relevant_ids": [
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_30_child_5",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_31_child_0",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_37_child_3",
+      "LLM RAG SYSTEMS RESEARCH PAPER_parent_27_child_2"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+experiment,query,precision@1,precision@3,precision@5,recall@5,mrr,hit_rate@5,ndcg@5
+baseline,Which framework was used to implement the testing methodology?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+baseline,What are the two major components of a RAG system?,1.0,0.3333333333333333,0.2,0.5,1.0,1,0.6131471927654584
+baseline,What similarity search engine was used in the tourism recommendation architecture?,1.0,0.6666666666666666,0.4,0.6666666666666666,1.0,1,0.7039180890341347
+baseline,What data source was used for tourism information?,1.0,0.3333333333333333,0.4,1.0,1.0,1,0.8503449055347546
+baseline,What is the purpose of embedding generation in the RAG architecture?,1.0,1.0,0.6,1.0,1.0,1,1.0
+baseline,What is one major challenge in testing LLM systems?,1.0,1.0,0.6,0.75,1.0,1,0.8318724637288826
+baseline,Which evaluation framework is specifically mentioned for RAG evaluation?,1.0,0.3333333333333333,0.4,0.6666666666666666,1.0,1,0.6713860725233041
+baseline,What issue does chain-of-verification help address?,1.0,1.0,0.6,1.0,1.0,1,1.0
+baseline,What are examples of text metrics used in the evaluation framework?,1.0,0.3333333333333333,0.2,0.5,1.0,1,0.6131471927654584
+baseline,What was one key finding regarding GPT-4o and GPT-4o Mini?,1.0,0.6666666666666666,0.4,0.5,1.0,1,0.5855700749881525
+reranker,Which framework was used to implement the testing methodology?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+reranker,What are the two major components of a RAG system?,0.0,0.3333333333333333,0.2,0.5,0.5,1,0.38685280723454163
+reranker,What similarity search engine was used in the tourism recommendation architecture?,1.0,0.6666666666666666,0.6,1.0,1.0,1,0.9674679834891693
+reranker,What data source was used for tourism information?,1.0,0.6666666666666666,0.4,1.0,1.0,1,0.9197207891481876
+reranker,What is the purpose of embedding generation in the RAG architecture?,1.0,0.6666666666666666,0.6,1.0,1.0,1,0.9060254355346823
+reranker,What is one major challenge in testing LLM systems?,1.0,1.0,0.8,1.0,1.0,1,1.0
+reranker,Which evaluation framework is specifically mentioned for RAG evaluation?,1.0,1.0,0.6,1.0,1.0,1,1.0
+reranker,What issue does chain-of-verification help address?,1.0,1.0,0.6,1.0,1.0,1,1.0
+reranker,What are examples of text metrics used in the evaluation framework?,1.0,0.6666666666666666,0.4,1.0,1.0,1,0.9197207891481876
+reranker,What was one key finding regarding GPT-4o and GPT-4o Mini?,1.0,0.6666666666666666,0.6,0.75,1.0,1,0.787702056960637

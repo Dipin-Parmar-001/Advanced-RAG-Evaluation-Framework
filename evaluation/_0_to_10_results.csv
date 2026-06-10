@@ -1,0 +1,21 @@
+experiment,query,precision@1,precision@3,precision@5,recall@5,mrr,hit_rate@5,ndcg@5
+baseline,What  mechanism replaces recurrence in the Transformer architecture?,1.0,1.0,0.8,0.8,1.0,1,0.8539316501572937
+baseline,What is the name of the architecture proposed in the paper?,0.0,0.0,0.2,0.3333333333333333,0.25,1,0.20210734650054757
+baseline,How many encoder layers are used in the base Transformer model?,0.0,0.0,0.0,0.0,0.0,0,0.0
+baseline,How many decoder layers are used in the base Transformer model?,0.0,0.3333333333333333,0.2,1.0,0.3333333333333333,1,0.5
+baseline,What dimensionality is used for d_model in the base Transformer?,1.0,0.6666666666666666,0.4,1.0,1.0,1,1.0
+baseline,What is Scaled Dot Product Attention?,1.0,0.6666666666666666,0.4,0.6666666666666666,1.0,1,0.7653606369886217
+baseline,How many attention heads are used in the Transformer base model?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+baseline,What value is used for dk in each attention head?,0.0,0.0,0.0,0.0,0.0,0,0.0
+baseline,Why are positional encodings required in the Transformer?,1.0,0.6666666666666666,0.4,1.0,1.0,1,1.0
+baseline,Which functions are used in sinusoidal positional encoding?,1.0,0.3333333333333333,0.2,0.5,1.0,1,0.6131471927654584
+reranker,What  mechanism replaces recurrence in the Transformer architecture?,1.0,1.0,1.0,1.0,1.0,1,1.0
+reranker,What is the name of the architecture proposed in the paper?,1.0,1.0,0.6,1.0,1.0,1,1.0
+reranker,How many encoder layers are used in the base Transformer model?,0.0,0.0,0.0,0.0,0.0,0,0.0
+reranker,How many decoder layers are used in the base Transformer model?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+reranker,What dimensionality is used for d_model in the base Transformer?,1.0,0.6666666666666666,0.4,1.0,1.0,1,1.0
+reranker,What is Scaled Dot Product Attention?,1.0,1.0,0.6,1.0,1.0,1,1.0
+reranker,How many attention heads are used in the Transformer base model?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+reranker,What value is used for dk in each attention head?,0.0,0.0,0.0,0.0,0.0,0,0.0
+reranker,Why are positional encodings required in the Transformer?,1.0,0.6666666666666666,0.4,1.0,1.0,1,1.0
+reranker,Which functions are used in sinusoidal positional encoding?,1.0,0.3333333333333333,0.2,0.5,1.0,1,0.6131471927654584

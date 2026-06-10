@@ -1,0 +1,21 @@
+experiment,query,precision@1,precision@3,precision@5,recall@5,mrr,hit_rate@5,ndcg@5
+baseline,Which optimizer is used to train the Transformer?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+baseline,How many warmup steps are used during Transformer training?,0.0,0.3333333333333333,0.2,1.0,0.5,1,0.6309297535714575
+baseline,What BLEU score did Transformer Big achieve on WMT 2014 English to German?,1.0,0.6666666666666666,0.8,1.0,1.0,1,0.9558295932317544
+baseline,What BLEU score did Transformer Big achieve on WMT 2014 English to French?,1.0,1.0,0.8,1.0,1.0,1,0.9828920819566879
+baseline,Why is self attention computationally efficient compared to recurrent networks?,0.0,0.6666666666666666,0.8,1.0,0.5,1,0.7606395682357036
+baseline,What mechanism allows the Transformer to model relationships between tokens?,0.0,0.3333333333333333,0.2,0.25,0.5,1,0.24630238874073
+baseline,What is the feed-forward network dimension used in the base Transformer?,1.0,0.3333333333333333,0.2,0.5,1.0,1,0.6131471927654584
+baseline,What dropout rate is used in the base Transformer model?,1.0,0.3333333333333333,0.4,0.6666666666666666,1.0,1,0.6713860725233041
+baseline,What is the purpose of Multi-Head Attention?,1.0,0.6666666666666666,0.4,0.6666666666666666,1.0,1,0.7653606369886217
+baseline,What dataset was used for English-German translation experiments?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+reranker,Which optimizer is used to train the Transformer?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
+reranker,How many warmup steps are used during Transformer training?,0.0,0.0,0.0,0.0,0.0,0,0.0
+reranker,What BLEU score did Transformer Big achieve on WMT 2014 English to German?,1.0,1.0,0.8,1.0,1.0,1,1.0
+reranker,What BLEU score did Transformer Big achieve on WMT 2014 English to French?,1.0,1.0,0.8,1.0,1.0,1,1.0
+reranker,Why is self attention computationally efficient compared to recurrent networks?,1.0,0.3333333333333333,0.6,0.75,1.0,1,0.7095272044910244
+reranker,What mechanism allows the Transformer to model relationships between tokens?,0.0,0.0,0.0,0.0,0.0,0,0.0
+reranker,What is the feed-forward network dimension used in the base Transformer?,0.0,0.6666666666666666,0.4,1.0,0.5,1,0.6934264036172708
+reranker,What dropout rate is used in the base Transformer model?,0.0,0.6666666666666666,0.6,1.0,0.5,1,0.7328286204777911
+reranker,What is the purpose of Multi-Head Attention?,1.0,0.6666666666666666,0.6,1.0,1.0,1,0.9060254355346823
+reranker,What dataset was used for English-German translation experiments?,1.0,0.3333333333333333,0.2,1.0,1.0,1,1.0
